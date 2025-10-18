@@ -31,7 +31,11 @@ body {
     color: var(--dark-text) !important; 
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0; /* Wider border */
+}
+
+hr {
+    border-top: 2px solid rgba(0,0,0,.1); /* Wider border */
 }
 
 .display-5, .card-title {
@@ -55,13 +59,25 @@ body {
     border-color: var(--university-blue);
     color: var(--white);
     font-weight: 700;
-    padding: .5rem 1.25rem;
+    padding: .5rem 1rem; /* Adjusted padding */
 }
 
 .btn-primary:hover {
     background-color: var(--action-blue);
     border-color: var(--action-blue);
     color: var(--white);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: var(--white);
+    font-weight: 700;
+    padding: .5rem 1rem;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
 }
 
 .btn-telegram { 
@@ -84,24 +100,58 @@ body {
     color: var(--university-blue); 
 }
 
-.list-group-item {
-    font-size: 0.9rem;
-    text-align: center;
+/* Icon style for map subheadings */
+h6 .bi {
+    font-size: 1.1rem;
+    vertical-align: middle;
+    margin-inline-end: .4rem;
+    color: var(--secondary-text);
 }
 
-/* NEW: Styles for the link buttons */
+/* Style for the dropdown buttons */
+.btn-outline-primary {
+    color: var(--action-blue);
+    border-color: var(--action-blue);
+    font-weight: 500;
+}
+.btn-outline-primary:hover {
+    background-color: var(--action-blue);
+    color: var(--white);
+}
+
+/* Style for items inside dropdown */
+.dropdown-item {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+}
+
+/* Style for static list-group links */
 .list-group-item-action {
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #f8f9fa;
     border: 1px solid #dee2e6;
     color: var(--action-blue);
     font-weight: 500;
-    margin-bottom: 5px; /* Add spacing */
-    border-radius: .375rem; /* Rounded corners */
+    margin-bottom: 5px;
+    border-radius: .375rem;
     padding: 0.75rem 1rem;
 }
 
 .list-group-item-action:hover {
-    background-color: #e9ecef; /* Darker hover */
+    background-color: #e9ecef;
     color: var(--university-blue);
     text-decoration: none;
+}
+
+/* Style for the "Need Help" card */
+.card-help {
+    background-color: var(--university-blue);
+}
+.card-help .card-title {
+    color: var(--white);
+    font-size: 1.1rem;
+}
+.card-help .card-title .bi {
+    color: var(--white);
+    font-size: 1rem;
+    margin-inline-start: .5rem;
 }
